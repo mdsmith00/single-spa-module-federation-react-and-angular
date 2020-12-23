@@ -1,0 +1,60 @@
+{
+  "name": "react-nav-app",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Application Nav",
+  "homepage": "https://github.com/mdsmith00/single-spa-module-federation-react-and-angular/react-nav-app#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdsmith00/single-spa-module-federation-react-and-angular.git"
+  },
+  "author": "mdsmith00",
+  "license": "ISC",
+  "scripts": {
+    "start": "webpack-cli serve --config config/webpack.dev.js",
+    "build": "webpack --config config/webpack.prod.js",
+    "serve": "serve dist",
+    "clean": "rm -rf dist",
+    "test": "jest src --passWithNoTests --maxWorkers=50%",
+    "test:coverage": "jest src --passWithNoTests --maxWorkers=50% --coverage",
+    "preinstall": "node checkNodeVersion.js"
+  },
+  "engines": {
+    "node": "^15.1.0"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "single-spa": "^5.8.3",
+    "single-spa-react": "^3.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
+    "@babel/preset-typescript": "^7.12.7",
+    "@babel/runtime": "^7.12.5",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.2.2",
+    "@types/jest": "^26.0.15",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/single-spa-react": "^2.12.0",
+    "babel-loader": "^8.2.2",
+    "bundle-loader": "^0.5.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "dotenv": "^8.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "jest": "^26.6.3",
+    "semver": "^7.3.4",
+    "serve": "^11.3.2",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.1.2",
+    "webpack": "^5.9.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.4.0"
+  }
+}
